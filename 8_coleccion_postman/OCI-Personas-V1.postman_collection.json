@@ -1,0 +1,630 @@
+{
+	"info": {
+		"_postman_id": "1dbc4076-2205-447c-ad8c-6f0cff38e950",
+		"name": "OCI-Personas-V1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1437784"
+	},
+	"item": [
+		{
+			"name": "rq1-crear-personas",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "LSJWgw-vW64YLnGWHAlS6A..",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "h8pW1Kmr4r9Q3qQ4CYkATQ..",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Access_token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombres\": \"Abel\",\r\n    \"apellidos\": \"Pedrozo\",\r\n    \"numero_identificacion\": \"22740997\",\r\n    \"tipo_identificacion\": \"CC\",\r\n    \"email\": \"a@clarap.co\",\r\n    \"salario\": 1200,\r\n    \"estado\":\"ACTIVO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas",
+					"protocol": "https",
+					"host": [
+						"gf14df869413d1f-ruma01",
+						"adb",
+						"us-ashburn-1",
+						"oraclecloudapps",
+						"com"
+					],
+					"path": [
+						"ords",
+						"api",
+						"v1",
+						"personas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "rq1-crear-personas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\": \"Abel\",\r\n    \"apellidos\": \"Pedrozo\",\r\n    \"numero_identificacion\": \"22740997\",\r\n    \"tipo_identificacion\": \"CC\",\r\n    \"email\": \"a@clarap.co\",\r\n    \"salario\": 1200,\r\n    \"estado\":\"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"gf14df869413d1f-ruma01",
+								"adb",
+								"us-ashburn-1",
+								"oraclecloudapps",
+								"com"
+							],
+							"path": [
+								"ords",
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 23:00:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000;includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"codigo_respuesta\": 0,\n    \"categoria_respuesta\": null,\n    \"descripcion_excepcion\": null,\n    \"descripcion_tecnica\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "rq2-actualizar-personas",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "LSJWgw-vW64YLnGWHAlS6A..",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "h8pW1Kmr4r9Q3qQ4CYkATQ..",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Access_token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_persona\":\"99\",\r\n    \"nombres\": \"Abelito\",\r\n    \"apellidos\": \"Pedrozo C.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas",
+					"protocol": "https",
+					"host": [
+						"gf14df869413d1f-ruma01",
+						"adb",
+						"us-ashburn-1",
+						"oraclecloudapps",
+						"com"
+					],
+					"path": [
+						"ords",
+						"api",
+						"v1",
+						"personas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "rq2-actualizar-personas",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_persona\":\"99\",\r\n    \"nombres\": \"Abelito\",\r\n    \"apellidos\": \"Pedrozo C.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"gf14df869413d1f-ruma01",
+								"adb",
+								"us-ashburn-1",
+								"oraclecloudapps",
+								"com"
+							],
+							"path": [
+								"ords",
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 23:01:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000;includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"codigo_respuesta\": 0,\n    \"categoria_respuesta\": null,\n    \"descripcion_excepcion\": null,\n    \"descripcion_tecnica\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "rq3-delete-personas-por-id",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "LSJWgw-vW64YLnGWHAlS6A..",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "h8pW1Kmr4r9Q3qQ4CYkATQ..",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Access_token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas/99",
+					"protocol": "https",
+					"host": [
+						"gf14df869413d1f-ruma01",
+						"adb",
+						"us-ashburn-1",
+						"oraclecloudapps",
+						"com"
+					],
+					"path": [
+						"ords",
+						"api",
+						"v1",
+						"personas",
+						"99"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "rq3-delete-personas-por-id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas/99",
+							"protocol": "https",
+							"host": [
+								"gf14df869413d1f-ruma01",
+								"adb",
+								"us-ashburn-1",
+								"oraclecloudapps",
+								"com"
+							],
+							"path": [
+								"ords",
+								"api",
+								"v1",
+								"personas",
+								"99"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 23:02:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000;includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"codigo_respuesta\": 0,\n    \"categoria_respuesta\": null,\n    \"descripcion_excepcion\": null,\n    \"descripcion_tecnica\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "rq3-buscar-personas-por-id",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "LSJWgw-vW64YLnGWHAlS6A..",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "h8pW1Kmr4r9Q3qQ4CYkATQ..",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Access_token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas/100",
+					"protocol": "https",
+					"host": [
+						"gf14df869413d1f-ruma01",
+						"adb",
+						"us-ashburn-1",
+						"oraclecloudapps",
+						"com"
+					],
+					"path": [
+						"ords",
+						"api",
+						"v1",
+						"personas",
+						"100"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "rq3-buscar-personas-por-id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas/100",
+							"protocol": "https",
+							"host": [
+								"gf14df869413d1f-ruma01",
+								"adb",
+								"us-ashburn-1",
+								"oraclecloudapps",
+								"com"
+							],
+							"path": [
+								"ords",
+								"api",
+								"v1",
+								"personas",
+								"100"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 22 Oct 2024 02:13:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000;includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "ETag",
+							"value": "\"OPDO/2sFTPo3rkUJYZkXayX8716pT8eBo1wwGhdzKdZw1BaUkPq3p67XcsjbIBYqp1/GyUBEJQG/4m9dxsrzjg==\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 100,\n    \"nombres\": \"ABEL\",\n    \"apellidos\": \"PEDROZO\",\n    \"numeroidentificacion\": \"22740997\",\n    \"tipoidentificacion\": \"CC\",\n    \"email\": \"a@clarap.co\",\n    \"salario\": 1200,\n    \"estado\": \"ACTIVO\",\n    \"identificacioncompleta\": \"CC22740997\",\n    \"nombrecompleto\": \"ABELPEDROZO\",\n    \"links\": [\n        {\n            \"rel\": \"collection\",\n            \"href\": \"https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas/\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "rq3-buscar-personas-por-id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas/100",
+							"protocol": "https",
+							"host": [
+								"gf14df869413d1f-ruma01",
+								"adb",
+								"us-ashburn-1",
+								"oraclecloudapps",
+								"com"
+							],
+							"path": [
+								"ords",
+								"api",
+								"v1",
+								"personas",
+								"100"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 22 Oct 2024 02:13:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000;includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "ETag",
+							"value": "\"OPDO/2sFTPo3rkUJYZkXayX8716pT8eBo1wwGhdzKdZw1BaUkPq3p67XcsjbIBYqp1/GyUBEJQG/4m9dxsrzjg==\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 100,\n    \"nombres\": \"ABEL\",\n    \"apellidos\": \"PEDROZO\",\n    \"numeroidentificacion\": \"22740997\",\n    \"tipoidentificacion\": \"CC\",\n    \"email\": \"a@clarap.co\",\n    \"salario\": 1200,\n    \"estado\": \"ACTIVO\",\n    \"identificacioncompleta\": \"CC22740997\",\n    \"nombrecompleto\": \"ABELPEDROZO\",\n    \"links\": [\n        {\n            \"rel\": \"collection\",\n            \"href\": \"https://gf14df869413d1f-ruma01.adb.us-ashburn-1.oraclecloudapps.com/ords/api/v1/personas/\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
